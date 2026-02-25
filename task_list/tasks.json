@@ -1,0 +1,40 @@
+{
+  "场地与仪式": [
+    {
+      "title": "预订婚礼场地",
+      "desc": "联系3家场地并确认档期",
+      "done": false,
+      "subtasks": [
+        {
+          "title": "查找场地A",
+          "desc": "查看官网和评价",
+          "done": false
+        },
+        {
+          "title": "对比价格",
+          "desc": "制作Excel表格比较",
+          "done": true
+        }
+      ]
+    }
+  ],
+  "婚纱与造型": [
+    {
+      "title": "试婚纱",
+      "desc": "预约3家婚纱店试穿",
+      "done": false,
+      "subtasks": [
+        {
+          "title": "查找婚纱店",
+          "desc": "小红书推荐清单",
+          "done": false
+        },
+        {
+          "title": "预约时间",
+          "desc": "避开周末高峰",
+          "done": false
+        }
+      ]
+    }
+  ]
+}

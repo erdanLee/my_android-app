@@ -1,0 +1,224 @@
+# 💍 婚礼筹备任务清单
+# 编辑说明：
+# - 用缩进表示层级（2或4空格）
+# - 列表项以 "- " 开头
+# - done: true/false 表示完成状态
+# - 可随时增删类别、任务、子任务
+
+婚礼时间:
+  - title: 初步选定婚礼与领证日期
+    desc: 首选 2026-09-27（中秋假期），次选 2026-09-28；领证首选 2026-09-15，次选 2026-09-04
+    done: false
+    subtasks:
+      - title: 查询黄历与节假日
+        desc: 确认 9月27日（周六）为中秋假期，28日为双日，均为吉日
+        done: true
+      - title: 沟通意向
+        desc: 与爱人和双方父母沟通，确认初步日期意向
+        done: false
+  - title: 正式确定并登记日期
+    desc: 最终敲定婚礼日与领证日，并同步给酒店、摄影等
+    done: false
+    subtasks:
+      - title: 正式确定日期
+        desc: 确认最终婚礼日期为 ______，领证日期为 ______
+        done: false
+  - title: 领证线上预约
+    desc: 在民政局官网或小程序预约领证时间
+    done: false
+    subtasks:
+      - title: 准备证件材料
+        desc: 身份证、户口本、照片等
+        done: false
+      - title: 完成线上预约
+        desc: 选择领证时段并获取预约号
+        done: false
+
+婚礼酒店:
+  - title: 初步筛选婚宴场地
+    desc: 根据预算,桌数,地理位置筛选3-5家酒店
+    desc: 重点关注：厅大小、层高、灯光、停车位、住宿配套
+    done: false
+    subtasks:
+      - title: 制定筛选标准
+        desc: 预算, 桌数，交通便利
+        done: false
+      - title: 收集候选名单
+        desc: 通过小红书、朋友推荐、实地踩点获取
+        done: false
+  - title: 电话/实地确认细节
+    desc: 联系酒店销售，确认档期、价格、政策
+    done: false
+    subtasks:
+      - title: 电话初询
+        desc: 询问档期、餐标、服务费等
+        done: false
+      - title: 实地考察
+        desc: 查看宴会厅实景、试菜、了解动线
+        done: false
+  - title: 菜品与菜单确认
+    desc: 与酒店协商定制菜单，兼顾口味与预算
+    done: false
+    subtasks:
+      - title: 安排试菜
+        desc: 邀请双方父母参与试菜
+        done: false
+      - title: 确定最终菜单
+        desc: 含冷盘、热菜、汤、主食、甜品、酒水
+        done: false
+  - title: 签订合同并沟通流程
+    desc: 签署婚宴协议，明确流程、付款、违约条款
+    done: false
+    subtasks:
+      - title: 审核合同条款
+        desc: 关注定金、尾款、取消政策、额外收费
+        done: false
+      - title: 对接婚礼流程
+        desc: 与酒店确认入场时间、彩排安排、设备使用（音响/投影）
+        done: false
+
+婚纱摄影:
+  - title: 摄影机构筛选
+    desc: 对比3-5家工作室，关注风格、口碑、套餐内容
+    done: false
+    subtasks:
+      - title: 收集作品集
+        desc: 查看客片真实效果，避免过度修图
+        done: false
+      - title: 对比报价与服务
+        desc: 含服装套数、精修张数、相册材质、是否含外景
+        done: false
+  - title: 电话/到店确认
+    desc: 预约到店沟通，确认档期与细节
+    done: false
+    subtasks:
+      - title: 预约咨询
+        desc: 了解拍摄档期是否匹配婚礼时间
+        done: false
+      - title: 到店面谈
+        desc: 与摄影师沟通风格偏好（自然/复古/电影感）
+        done: false
+  - title: 风格与服装确认
+    desc: 确定主婚纱、敬酒服、新郎西装及拍摄主题
+    done: false
+    subtasks:
+      - title: 选定拍摄风格
+        desc: 如“森系外景+室内复古”
+        done: false
+      - title: 预约试纱
+        desc: 提前1-2个月试穿并锁定服装
+        done: false
+  - title: 实地拍摄与选片
+    desc: 完成婚纱照拍摄，并完成后期选片
+    done: false
+    subtasks:
+      - title: 拍摄当日准备
+        desc: 带齐证件、护肤品、零食、充电宝
+        done: false
+      - title: 选片与精修确认
+        desc: 在规定时间内完成选片，确认精修要求
+        done: false
+
+婚礼四大金刚:
+  - title: 司仪（主持人）选择
+    desc: 风格匹配（温馨/幽默/庄重），试听样片
+    done: false
+    subtasks:
+      - title: 收集推荐与报价
+        desc: 通过婚庆公司或朋友推荐
+        done: false
+      - title: 确认档期并签约
+        desc: 明确流程参与、台词定制需求
+        done: false
+
+  - title: 摄影师 & 摄像师（跟拍/跟录）
+    desc: 区分婚纱照团队和婚礼当天跟拍团队
+    done: false
+    subtasks:
+      - title: 查看婚礼当日客片
+        desc: 关注抓拍能力、动线覆盖、成片速度
+        done: false
+      - title: 确认设备与交付时间
+        desc: 如是否含快剪、精修张数、视频时长
+        done: false
+
+  - title: 新娘跟妆师
+    desc: 试妆确认妆面风格（早妆+仪式妆+敬酒妆）
+    done: false
+    subtasks:
+      - title: 安排试妆
+        desc: 带上婚纱照片，测试持久度
+        done: false
+      - title: 签订服务协议
+        desc: 明确服务时段、是否含男方化妆
+        done: false
+
+  - title: 婚车/车队安排
+    desc: 主婚车+副车数量、装饰、司机安排
+    done: false
+    subtasks:
+      - title: 租赁 or 借用亲友车辆
+        desc: 确认车型、颜色统一性
+        done: false
+      - title: 安排路线与时间
+        desc: 规划接亲路线，预留堵车时间
+        done: false
+
+宾客邀请:
+  - title: 名单初拟（预估人数）
+    desc: 初步统计宾客总数，用于酒店桌数与住宿安排
+    done: false
+    subtasks:
+      - title: 分类整理名单
+        desc: 按“男方亲友”“女方亲友”“同事”“朋友”分类
+        done: false
+      - title: 预估总人数
+        desc: 统计初步名单人数，预留10-20%余量以应对变动
+        done: false
+  - title: 名单最终确认
+    desc: 与双方父母逐人核对，确定正式邀请名单
+    done: false
+    subtasks:
+      - title: 电话/微信确认出席意向
+        desc: 特别备注外地宾客
+        done: false
+      - title: 锁定最终人数
+        desc: 提供给酒店作为桌数依据
+        done: false
+  - title: 电子请柬制作与发送
+    desc: 婚庆公司提供模板，定制请柬内容并发送给宾客
+    done: false
+    subtasks:
+      - title: 定制请柬
+        desc: 确定请柬文案、设计风格
+        done: false
+      - title: 发送并收集回执
+        desc: 设置截止日期，统计实际到场人数
+        done: false
+
+物品采购:
+  - title: 烟酒糖及喜品采购
+    desc: 采购婚礼当日所需喜糖、喜烟、喜酒、红包、囍字等
+    done: false
+    subtasks:
+      - title: 制定采购清单
+        desc: 喜糖__盒、中华烟__条、红酒__瓶、红包__个
+        done: false
+      - title: 挑选及下单
+        desc: 线上（京东/淘宝）或线下烟酒店采购
+        done: false
+
+婚房布置:
+  - title: 婚房布置
+    desc: 男女双方婚房布置
+    done: false
+    subtasks:
+      - title: 确定布置风格
+        desc: 红色喜庆 or 粉色浪漫
+        done: false
+      - title: 采购布置物料
+        desc: 囍字贴、拉花、气球、花瓣、LED灯串
+        done: false
+      - title: 安排布置时间
+        desc: 建议婚礼前一天下午完成
+        done: false
