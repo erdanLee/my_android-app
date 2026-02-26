@@ -12,7 +12,7 @@
     subtasks:
       - title: 查询黄历与节假日
         desc: 确认 9月27日（周六）为中秋假期，28日为双日，均为吉日
-        done: true
+        done: false
       - title: 沟通意向
         desc: 与爱人和双方父母沟通，确认初步日期意向
         done: false
@@ -27,12 +27,15 @@
     desc: 在民政局官网或小程序预约领证时间
     done: false
     subtasks:
-      - title: 准备证件材料
-        desc: 身份证、户口本、照片等
-        done: false
       - title: 完成线上预约
         desc: 选择领证时段并获取预约号
         done: false
+    - title: 准备证件材料
+        desc: 身份证、照片等
+        done: false
+    - title: 领证办理
+        desc: 按预约时间到民政局办理领证手续
+        done: false        
 
 婚礼酒店:
   - title: 初步筛选婚宴场地

@@ -246,22 +246,41 @@ def wedding_planner(page: ft.Page):
         ]
         page.update()
 
+    # === 创建菜单项 ===
     menu_items = []
     for cat in WEDDING_PLAN.keys():
         btn = ft.ElevatedButton(
             text=cat,
             on_click=lambda e, c=cat: show_category(c),
-            width=180,
-            height=40,
+            width=150,
+            height=36,
         )
         menu_items.append(btn)
 
-    menu_column = ft.Column(menu_items, spacing=8)
+    # === 响应式菜单容器：手机用 GridView（两列），桌面用 Column（单列） ===
+    is_mobile = (page.width or 0) < 600
 
+    if is_mobile:
+        # 手机端：2列网格
+        menu_container = ft.GridView(
+            runs_count=2,               # 2列
+            max_extent=150,             # 每列最大宽度
+            child_aspect_ratio=3.3,     # 宽高比（宽:高 ≈ 3.3:1 → 按钮扁平）
+            spacing=8,                  # 列间距
+            run_spacing=8,              # 行间距
+            padding=ft.padding.only(left=10, right=10, top=8, bottom=8),
+        )
+        menu_container.controls = menu_items
+    else:
+        # 桌面端：单列
+        menu_container = ft.Column(menu_items, spacing=8)
+
+    # 初始化显示第一个分类
     if WEDDING_PLAN:
         first_cat = next(iter(WEDDING_PLAN))
         show_category(first_cat)
 
+    # 初始化进度条
     all_init = get_all_tasks()
     total_init = len(all_init)
     done_init = sum(1 for t in all_init if t.get("done", False))
@@ -270,15 +289,16 @@ def wedding_planner(page: ft.Page):
     progress_bar = ft.ProgressBar(value=progress_init / 100, width=300)
     progress_text = ft.Text(f"整体进度: {done_init}/{total_init} ({progress_init}%)", weight="bold")
 
-    if page.width and page.width < 600:
+    # === 布局：根据屏幕宽度选择垂直或水平布局 ===
+    if is_mobile:
         layout = ft.Column([
-            ft.Container(content=menu_column, padding=10),
-            ft.Divider(),
-            content_area
+            ft.Container(content=menu_container, padding=0),  # GridView 已含 padding
+            ft.Divider(height=10),
+            ft.Container(content=content_area, expand=True, padding=10)
         ], expand=True)
     else:
         layout = ft.Row([
-            ft.Container(content=menu_column, width=220, padding=10),
+            ft.Container(content=menu_container, width=220, padding=10),
             ft.VerticalDivider(),
             ft.Container(content=content_area, expand=True, padding=10)
         ], expand=True)
@@ -294,7 +314,6 @@ def wedding_planner(page: ft.Page):
         ),
         layout
     ], expand=True)
-
 
 def main(page: ft.Page):
     page.title = "婚礼筹备助手"
