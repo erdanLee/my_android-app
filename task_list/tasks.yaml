@@ -30,10 +30,10 @@
       - title: 完成线上预约
         desc: 选择领证时段并获取预约号
         done: false
-    - title: 准备证件材料
+      - title: 准备证件材料
         desc: 身份证、照片等
         done: false
-    - title: 领证办理
+      - title: 领证办理
         desc: 按预约时间到民政局办理领证手续
         done: false        
 
